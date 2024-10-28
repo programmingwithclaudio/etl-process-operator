@@ -1,0 +1,4 @@
+venv/
+*.csv
+bot_moviles_opsitel/datawarehouse/
+datasets/
