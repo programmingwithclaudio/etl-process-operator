@@ -229,24 +229,3 @@ schedule = IntervalSchedule(interval=timedelta(days=1))
 etl_reniec_flow.serve(schedule=schedule)
 ```
 
-¿Te gustaría que profundice en algún aspecto específico de la implementación o que agreguemos alguna funcionalidad adicional?
----
-
-```sql
-SELECT 
-    numero,
-    DNI,
-    CONCAT(AP_PAT, ' ', AP_MAT, ' ', NOMBRES) AS fullnombres,
-	Deuda,
-	Estado_Deuda,
-	tipo_list,
-	Tipo_Gestion,
-	Activo,
-	Tipo_Claro,
-	Tipo_Cliente,
-	Full_Claro,
-	SBS,
-	Cliente_Activo
-FROM 
-    Base_Clientes_Lima;
-```
